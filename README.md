@@ -1,4 +1,4 @@
-# Flash
+# [Flash](https://flash.now.sh/)
 
 [![Vave Code Style](https://img.shields.io/badge/code_style-vave-21DFEA.svg)](https://github.com/rdev/vave)
 
