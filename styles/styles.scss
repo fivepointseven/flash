@@ -1,0 +1,160 @@
+body {
+	margin: 0;
+	font-family: -apple-system, BlinkMacSystemFont, wf_segoe-ui_light, wf_segoe-ui_normal, Roboto, 'Helvetica Neue', Helvetica, Arial, sans-serif;
+}
+
+.main {
+	width: 100vw;
+	height: 100vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	transition: all 0.5s ease;
+	
+	&.dark {
+		background: #101113;
+		color: white;
+	}
+	
+	&.light {
+		background: #fafafa;
+		color: #1a1a1a;
+
+		button {
+			color: #1a1a1a;
+		}
+
+		.rate input,
+		.rate span {
+			color: #1a1a1a;
+		}
+
+		.rate input {
+			border-bottom: 1px solid #1a1a1a;
+		}
+	}
+
+	span {
+		font-size: 42px;
+		font-weight: 200;
+		letter-spacing: 1px;
+	}
+
+	textarea {
+		position: absolute;
+		width: 70vw;
+		height: 100px;
+		top: 40px;
+		left: calc(50% - 35vw);
+		background-color: transparent;
+		border: 0;
+		outline: 0;
+		color: grey;
+		letter-spacing: 1px;
+		font-weight: 200;
+		font-size: 22px;
+		border-bottom: 1px solid grey;
+		transition: all 0.5s ease;
+	}
+
+	button {
+		position: absolute;
+		width: 140px;
+		top: 160px;
+		left: calc(50% + 35vw - 110px);
+		outline: 0;
+		border: 0;
+		background: none;
+		color: white;
+		font-size: 18px;
+		font-weight: 200;
+		cursor: pointer;
+		transition: all 0.5s ease;
+
+		&:active {
+			opacity: 0.7;
+		}
+	}
+	
+	.rate {
+		position: absolute;
+		top: 160px;
+		left: 15vw;
+		font-size: 18px;
+		font-weight: 200;
+		display: flex;
+		
+		input,
+		span {
+			font-size: 18px;
+			font-weight: 200;
+			color: white;
+			transition: all 0.5s ease;
+		}
+
+		input {
+			margin: 0 8px;
+			width: 42px;
+			outline: 0;
+			border: 0;
+			background: none;
+			border-bottom: 1px solid white;
+		}
+	}
+
+	&.reading {
+		textarea,
+		.rate,
+		button {
+			opacity: 0;
+		}
+	}
+}
+button.theme-button {
+	position: fixed;
+	right: 30px;
+	bottom: 30px;
+	color: grey;
+	outline: 0;
+	border: 0;
+	background: none;
+	font-size: 18px;
+	font-weight: 200;
+	cursor: pointer;
+	transition: all 0.5s ease;
+
+	&:active {
+		opacity: 0.7;
+	}
+
+	&.reading {
+		opacity: 0;
+	}
+}
+
+.attribution {
+	position: fixed;
+	left: 30px;
+	bottom: 20px;
+	width: 200px;
+	color: grey;
+	font-size: 16px;
+	font-weight: 200;
+	transition: all 0.5s ease;
+
+	span {
+		font-size: 16px;
+		opacity: 0.3;
+		text-decoration: line-through;
+		margin-right: 8px;
+	}
+
+	a {
+		font-size: 16px;
+		color: grey;
+	}
+
+	&.reading {
+		opacity: 0;
+	}
+}
