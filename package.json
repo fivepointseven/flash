@@ -14,7 +14,7 @@
     },
     "keywords": [],
     "author": "",
-    "license": "ISC",
+    "license": "MIT",
     "dependencies": {
         "next": "^5.0.0",
         "null": "^1.0.1",
